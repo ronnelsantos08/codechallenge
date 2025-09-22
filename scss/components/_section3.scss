@@ -1,0 +1,165 @@
+/* =========================
+   Section 3 Styling (with responsive step numbers inside images)
+   ========================= */
+
+   $section3-text: rgba(46, 48, 46, 1);
+
+   .section3-container {
+     text-align: center;
+     padding: 4rem 1rem;
+     
+   
+     h2 {
+       &.small-heading {
+         color: $section3-text;
+         font-family: 'Roboto Mono', monospace;
+         font-size: clamp(1rem, 1.25vw, 100rem);
+         font-weight: 400;
+       }
+   
+       &.large-heading {
+         color: $section3-text;
+         font-family: 'Inter', sans-serif;
+         font-weight: 900;
+         font-size: clamp(1rem, 5.4vw, 100rem);
+         letter-spacing: -1.33px;
+         text-transform: uppercase;
+         line-height: 52px;
+         margin-bottom: 7%;
+         margin-top: 3%;
+       }
+     }
+
+        .section3-clock {
+          width: 8%;   
+          height: auto;
+          margin: 3% auto; 
+          display: block;
+        }
+    
+     .product-steps {
+       margin-top: 3rem;
+       justify-content: center;
+   
+       .product-step {
+         margin: 0 auto 2rem auto; 
+        
+   
+        
+         .step-image-wrapper {
+           position: relative;
+           display: inline-block;
+           width: 100%;
+         }
+   
+         img.step-icon {
+           width: auto;
+           height: 100%;
+           display: block;
+           border-radius: clamp(1rem, 3.4vw, 100rem);
+         }
+   
+       
+         .step-number {
+           position: absolute;
+           top: 5%;
+           left: 10%;
+           width: 15%;
+           aspect-ratio: 1 / 1; 
+           border: 1.5px solid rgba(0, 0, 0, 1);
+           background-color: rgba(255, 255, 255, 1);
+           border-radius: 50%; 
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-family: 'Inter', sans-serif;
+           font-weight: 800;
+           font-size: clamp(1rem, 2vw, 100rem); 
+           color: rgba(0, 0, 0, 1);
+         }
+   
+         .product-details {
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           margin-top: 1rem;
+           width: 100%;
+   
+           img {
+             width:auto;
+             height: 150px;
+             margin-right: 1rem;
+           }
+   
+           p {
+             color: $section3-text;
+             font-family: 'Roboto Mono', monospace;
+             font-size: clamp(.1rem, 1.25vw, 100rem);
+             font-weight: 400;
+             line-height: 1.4;
+             margin: 0;
+             text-align: left;
+           }
+         }
+       }
+     }
+   }
+
+   /* =========================
+   📱 Mobile Responsiveness
+   ========================= */
+@media screen and (max-width: 1024px) {
+    .section3-container {
+      padding: 2rem 1rem;
+  
+      h2.large-heading {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+      }
+  
+      .section3-clock {
+        width: 20%;
+        margin: 2rem auto;
+      }
+  
+      .product-steps {
+        flex-direction: column;
+        align-items: center;
+  
+        .product-step {
+          max-width: 90%;
+          text-align: center;
+          
+  
+          .step-image-wrapper {
+            width: 100%;
+          }
+  
+          img.step-icon {
+            width: 100%;
+            height: auto;
+
+            border-radius: 15%;
+          }
+  
+          .product-details {
+            flex-direction: row;
+            text-align: center;
+  
+            img {
+              margin: 0 0 1rem 0;
+              height: 100px;
+            }
+  
+            p {
+              text-align: center;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+   

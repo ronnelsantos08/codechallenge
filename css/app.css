@@ -6762,6 +6762,138 @@ html.is-reveal-open body {
   }
 }
 
+/* =========================
+   Section 3 Styling (with responsive step numbers inside images)
+   ========================= */
+.section3-container {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.section3-container h2.small-heading {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  font-weight: 400;
+}
+.section3-container h2.large-heading {
+  color: rgb(46, 48, 46);
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: clamp(1rem, 5.4vw, 100rem);
+  letter-spacing: -1.33px;
+  text-transform: uppercase;
+  line-height: 52px;
+  margin-bottom: 7%;
+  margin-top: 3%;
+}
+.section3-container .section3-clock {
+  width: 8%;
+  height: auto;
+  margin: 3% auto;
+  display: block;
+}
+.section3-container .product-steps {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.section3-container .product-steps .product-step {
+  margin: 0 auto 2rem auto;
+}
+.section3-container .product-steps .product-step .step-image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.section3-container .product-steps .product-step img.step-icon {
+  width: auto;
+  height: 100%;
+  display: block;
+  border-radius: clamp(1rem, 3.4vw, 100rem);
+}
+.section3-container .product-steps .product-step .step-number {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 15%;
+  aspect-ratio: 1/1;
+  border: 1.5px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1rem, 2vw, 100rem);
+  color: rgb(0, 0, 0);
+}
+.section3-container .product-steps .product-step .product-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.section3-container .product-steps .product-step .product-details img {
+  width: auto;
+  height: 150px;
+  margin-right: 1rem;
+}
+.section3-container .product-steps .product-step .product-details p {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.1rem, 1.25vw, 100rem);
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+}
+
+/* =========================
+📱 Mobile Responsiveness
+========================= */
+@media screen and (max-width: 1024px) {
+  .section3-container {
+    padding: 2rem 1rem;
+  }
+  .section3-container h2.large-heading {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .section3-container .section3-clock {
+    width: 20%;
+    margin: 2rem auto;
+  }
+  .section3-container .product-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section3-container .product-steps .product-step {
+    max-width: 90%;
+    text-align: center;
+  }
+  .section3-container .product-steps .product-step .step-image-wrapper {
+    width: 100%;
+  }
+  .section3-container .product-steps .product-step img.step-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+  }
+  .section3-container .product-steps .product-step .product-details {
+    flex-direction: row;
+    text-align: center;
+  }
+  .section3-container .product-steps .product-step .product-details img {
+    margin: 0 0 1rem 0;
+    height: 100px;
+  }
+  .section3-container .product-steps .product-step .product-details p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
 body {
   background-color: rgb(239, 247, 250);
 }
