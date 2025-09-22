@@ -1,0 +1,23 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass --quiet-deps --load-path=node_modules/foundation-sites/scss scss/app.scss css/app.css --style=expanded && postcss css/app.css --replace",
+    "watch:css": "sass --watch --quiet-deps --load-path=node_modules/foundation-sites/scss scss/app.scss css/app.css --style=expanded"
+  }
+  ,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "foundation-sites": "^6.9.0",
+    "jquery": "^3.7.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.93.0",
+    "what-input": "^5.2.12"
+  }
+}
