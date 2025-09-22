@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+
+  <title>CodeChallenge</title>
+</head>
+<body>
+<!-- Announcement bar -->
+<div class="top-bar-announcement">
+    FREE SHIPPING ON US ORDERS OVER $100
+  </div>
+
+  <!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+      <!-- Hamburger opens off-canvas -->
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <img src="images/logo.png" alt="D1 Logo" class="logo">
+    </div>
+  
+    <div class="navbar-right">
+      <a href="#" class="btn-get-started">GET STARTED</a>
+    <div class="cart">
+  <img src="images/cart.png" alt="Cart" class="cart-icon">
+  <span class="cart-badge">1</span>
+</div>
+    </div>
+  </nav>
+  
+  <!-- Off-canvas menu -->
+  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  
+    <!-- Menu links -->
+    <ul class="vertical menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  
+   <!-- Hero Section -->
+   <div class="hero-section">
+    <div class="grid-x grid-padding-x align-middle">
+      <div class="cell medium-7 small-12">
+        <h1>Skincare for guys that aren’t into skincare</h1>
+        <p class="hero-subtitle">Try the One Minute Skincare Routine</p>
+        <button class="hero-button">TRY TODAY!</button>
+        
+        <div class="testimonial-container">
+            <img class="goldstar" src="images/goldstar.svg" alt="Gold Star">
+          <p>“I love this stuff, it totally changed the game for me”</p>
+          <div class="testimonial-author">
+            <img src="images/ps.png" alt="Peter S. profile image">
+            <span>PETER S.</span>
+          </div>
+        </div>
+      </div>
+      <div class="cell medium-6 small-12 hero-image-container">
+        <img class="hero-image" src="images/heroproduct.png" alt="Hero product image">
+      </div>
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+   
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/what-input/dist/what-input.min.js"></script>
+  <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
