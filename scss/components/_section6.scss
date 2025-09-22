@@ -124,75 +124,73 @@
        }
      }
    }
-   
-   /* =========================
-      Mobile Responsive
-      ========================= */
-   @media screen and (max-width: 768px) {
-     .section6-container {
-       flex-direction: column;
-       text-align: center;
-
+  /* =========================
+   Mobile Responsive
+   ========================= */
+@media screen and (max-width: 768px) {
+    .section6-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
   
-   
-       .section6-left {
-         padding-right: 0;
-   
-         .section6-announcement {
-           width: 100%;
-           max-width: 90%;
-   
-           p {
-             width: auto;
-             font-size: 16px;
-           }
-         }
-   
-         h2 {
-           font-size: 1.8rem;
-         }
-   
-         .main-p {
-           font-size: 1rem;
-           margin: 0 auto 2rem;
-           max-width: 90%;
-         }
-   
-         .section6-features {
-           align-items: center;
-   
-           .section6-features-item {
-             justify-content: center;
-   
-             img {
-               width: 40px;
-               height: 40px;
-             }
-   
-             p {
-               font-size: 16px;
-             }
-           }
-         }
-   
-         .section6-button {
-           width: 100%;
-           max-width: 320px;
-           height: 55px;
-           font-size: 18px;
-           line-height: 55px;
-         }
-       }
-   
-       .section6-right {
-         margin-top: 2rem;
-   
-         img {
-           max-width: 90%;
-           margin: 0 auto;
-           display: block;
-         }
-       }
-     }
-   }
-   
+      .section6-left {
+        flex: 1 1 100%;
+        padding-right: 0;
+  
+        .section6-announcement {
+          width: 100%;
+          max-width: 90%;
+          margin: 0 auto 1.5rem;
+  
+          p {
+            font-size: 16px;
+          }
+        }
+  
+        h2 {
+          font-size: 1.8rem;
+        }
+  
+        .main-p {
+          font-size: 1rem;
+          margin: 0 auto 2rem;
+          max-width: 90%;
+        }
+  
+        .section6-features {
+          align-items: flex-start;
+  
+          .section6-features-item {
+            justify-content: center;
+  
+            img {
+              width: 35px;
+              height: 35px;
+            }
+  
+            p {
+              font-size: 15px;
+              text-align: left;
+            }
+          }
+        }
+  
+        .section6-button {
+          width: 100%;
+          max-width: 80%;
+          font-size: 18px;
+          padding: 0.8rem 1rem;
+        }
+      }
+  
+      .section6-right {
+        flex: 1 1 100%;
+        margin-top: 2rem;
+  
+        img {
+          max-width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }

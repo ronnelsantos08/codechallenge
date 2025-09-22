@@ -7222,22 +7222,24 @@ html.is-reveal-open body {
 }
 
 /* =========================
-   Mobile Responsive
-   ========================= */
+ Mobile Responsive
+ ========================= */
 @media screen and (max-width: 768px) {
   .section6-container {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 1rem;
   }
   .section6-container .section6-left {
+    flex: 1 1 100%;
     padding-right: 0;
   }
   .section6-container .section6-left .section6-announcement {
     width: 100%;
     max-width: 90%;
+    margin: 0 auto 1.5rem;
   }
   .section6-container .section6-left .section6-announcement p {
-    width: auto;
     font-size: 16px;
   }
   .section6-container .section6-left h2 {
@@ -7249,32 +7251,32 @@ html.is-reveal-open body {
     max-width: 90%;
   }
   .section6-container .section6-left .section6-features {
-    align-items: center;
+    align-items: flex-start;
   }
   .section6-container .section6-left .section6-features .section6-features-item {
     justify-content: center;
   }
   .section6-container .section6-left .section6-features .section6-features-item img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   .section6-container .section6-left .section6-features .section6-features-item p {
-    font-size: 16px;
+    font-size: 15px;
+    text-align: left;
   }
   .section6-container .section6-left .section6-button {
     width: 100%;
-    max-width: 320px;
-    height: 55px;
+    max-width: 80%;
     font-size: 18px;
-    line-height: 55px;
+    padding: 0.8rem 1rem;
   }
   .section6-container .section6-right {
+    flex: 1 1 100%;
     margin-top: 2rem;
   }
   .section6-container .section6-right img {
     max-width: 90%;
     margin: 0 auto;
-    display: block;
   }
 }
 body {
