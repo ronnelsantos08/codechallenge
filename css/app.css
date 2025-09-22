@@ -7112,6 +7112,171 @@ html.is-reveal-open body {
     margin: 0 auto;
   }
 }
+/* =========================
+   Section 6 Styling (SCSS)
+   ========================= */
+.grid-container {
+  max-width: 100% !important;
+}
+
+.section6-container {
+  padding: 4% 5%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  border-top: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+.section6-container .section6-left {
+  flex: 1 1 50%;
+  padding-right: 2rem;
+}
+.section6-container .section6-left .section6-announcement {
+  width: 55%;
+  padding: 1.5% 0;
+  border-radius: 28.5px;
+  background-color: rgb(255, 186, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.section6-container .section6-left .section6-announcement p {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+.section6-container .section6-left h2 {
+  color: rgb(46, 48, 46);
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 3.5vw, 100rem);
+  font-weight: 900;
+  letter-spacing: -0.83px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section6-container .section6-left .main-p {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  width: 75%;
+}
+.section6-container .section6-left .section6-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.section6-container .section6-left .section6-features .section6-features-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section6-container .section6-left .section6-features .section6-features-item img {
+  width: 4%;
+  height: auto;
+}
+.section6-container .section6-left .section6-features .section6-features-item p {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  font-weight: 400;
+  margin: 0;
+}
+.section6-container .section6-left .section6-button {
+  width: 65%;
+  height: auto;
+  padding: 1% 0;
+  background-color: rgb(34, 36, 48);
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  line-height: 65px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.section6-container .section6-left .section6-button span {
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-left: 2%;
+}
+.section6-container .section6-right {
+  flex: 1 1 50%;
+}
+.section6-container .section6-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Mobile Responsive
+   ========================= */
+@media screen and (max-width: 768px) {
+  .section6-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section6-container .section6-left {
+    padding-right: 0;
+  }
+  .section6-container .section6-left .section6-announcement {
+    width: 100%;
+    max-width: 90%;
+  }
+  .section6-container .section6-left .section6-announcement p {
+    width: auto;
+    font-size: 16px;
+  }
+  .section6-container .section6-left h2 {
+    font-size: 1.8rem;
+  }
+  .section6-container .section6-left .main-p {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+    max-width: 90%;
+  }
+  .section6-container .section6-left .section6-features {
+    align-items: center;
+  }
+  .section6-container .section6-left .section6-features .section6-features-item {
+    justify-content: center;
+  }
+  .section6-container .section6-left .section6-features .section6-features-item img {
+    width: 40px;
+    height: 40px;
+  }
+  .section6-container .section6-left .section6-features .section6-features-item p {
+    font-size: 16px;
+  }
+  .section6-container .section6-left .section6-button {
+    width: 100%;
+    max-width: 320px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+  }
+  .section6-container .section6-right {
+    margin-top: 2rem;
+  }
+  .section6-container .section6-right img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+}
 body {
   background-color: rgb(239, 247, 250);
 }
