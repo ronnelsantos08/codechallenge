@@ -1,0 +1,116 @@
+
+.top-bar-announcement {
+    width: 100%;
+    background-color: rgba(255, 186, 0, 1);
+    color: #000; 
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 12px, 100rem); 
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+
+  // Navbar //
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: clamp(1rem,52px, 100rem);
+        height: clamp(1rem, 42px, 100rem);
+        padding-left: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .hamburger span {
+        display: block;
+        height: 3px;       
+        background: black; 
+        border-radius: 2px;
+      }
+      
+  
+    .logo {
+        width: clamp(1rem, 62px, 100rem);   
+        height: clamp(1rem, 75px, 100rem);   
+        display: block;
+      }
+      
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 100rem);
+  
+    .btn-get-started {
+        background-color: rgba(34, 36, 48, 1);
+        color: #fff;
+        font-family: 'Roboto Mono', monospace;
+        padding: clamp(0.6rem, .7vw, 100rem) clamp(1.2rem, 2.7vw, 100rem);
+        border-radius: 30px;      
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: clamp(1rem, 1.29vw, 100rem);
+        display: inline-block;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; 
+      
+        &:hover {
+          background-color: #fdfdfd;
+          color: #121212;
+        }
+    }
+  
+    .cart {
+        position: relative;
+        display: inline-block;
+      
+        .cart-icon {
+          width: clamp(1rem, 50px, 100rem); 
+          height: auto;
+          display: block;
+          border-width: 0px 0px 1px 1px; 
+            border-style: solid;
+            border-color: rgb(209, 209, 209);
+        }
+      
+        .cart-badge {
+          position: absolute;
+          top: -10px;
+          right: -8px;
+          background: rgb(0, 0, 0);
+          color: #fff;
+          font-size: clamp(1rem, 1vw, 100rem);
+          font-weight: bold;
+          border-radius: 50%;
+          padding: 5px 10px;
+          line-height: 1;
+        }
+      }
+      
+  }
+
+  .hamburger {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 0.25rem;
+  }

@@ -6328,9 +6328,10 @@ html.is-reveal-open body {
   background-color: rgb(255, 186, 0);
   color: #000;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: clamp(1rem, 12px, 100rem);
+  font-weight: bold;
   padding: 0.5rem 1rem;
 }
 
@@ -6339,7 +6340,7 @@ html.is-reveal-open body {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -6349,54 +6350,72 @@ html.is-reveal-open body {
   gap: 0.75rem;
 }
 .navbar-left .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: clamp(1rem, 52px, 100rem);
+  height: clamp(1rem, 42px, 100rem);
+  padding-left: 0;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
 }
+.navbar-left .hamburger span {
+  display: block;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+}
 .navbar-left .logo {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #000;
+  width: clamp(1rem, 62px, 100rem);
+  height: clamp(1rem, 75px, 100rem);
+  display: block;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 100rem);
 }
 .navbar-right .btn-get-started {
-  background-color: #000;
+  background-color: rgb(34, 36, 48);
   color: #fff;
-  padding: 0.5rem 1rem;
+  font-family: "Roboto Mono", monospace;
+  padding: clamp(0.6rem, 0.7vw, 100rem) clamp(1.2rem, 2.7vw, 100rem);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.29vw, 100rem);
+  display: inline-block;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease-in-out;
 }
 .navbar-right .btn-get-started:hover {
-  background-color: #333;
+  background-color: #fdfdfd;
+  color: #121212;
 }
 .navbar-right .cart {
   position: relative;
   display: inline-block;
 }
 .navbar-right .cart .cart-icon {
-  width: 30px;
+  width: clamp(1rem, 50px, 100rem);
   height: auto;
   display: block;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: rgb(209, 209, 209);
 }
 .navbar-right .cart .cart-badge {
   position: absolute;
-  top: -6px;
+  top: -10px;
   right: -8px;
-  background: red;
+  background: rgb(0, 0, 0);
   color: #fff;
-  font-size: 0.7rem;
+  font-size: clamp(1rem, 1vw, 100rem);
   font-weight: bold;
   border-radius: 50%;
-  padding: 2px 6px;
+  padding: 5px 10px;
   line-height: 1;
 }
 
@@ -6408,20 +6427,115 @@ html.is-reveal-open body {
   padding: 0.25rem;
 }
 
-.navbar-right .btn-get-started {
-  background-color: #000;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: inline-block;
-  text-decoration: none;
+/* =========================
+   Hero Section Styling
+   ========================= */
+.hero-section {
+  background: linear-gradient(232deg, rgb(70, 78, 112) 0%, rgb(32, 55, 70) 100%);
+  color: white;
+  padding: 5% 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
-.navbar-right .btn-get-started:hover {
-  background-color: #333;
-  color: #fff;
+.hero-section .grid-x {
+  display: flex;
+  flex-flow: nowrap;
+}
+.hero-section h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: clamp(1rem, 4.5vw, 100rem);
+  letter-spacing: -1.07px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.hero-section p.hero-subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.3vw, 100rem);
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 4% 0 4% 0;
+}
+.hero-section .hero-button {
+  width: clamp(1rem, 22vw, 100rem);
+  height: clamp(1rem, 4vw, 100rem);
+  border-radius: clamp(1rem, 100px, 100rem);
+  background-color: rgb(255, 186, 0);
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.2vw, 100rem);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20%;
+}
+.hero-section .hero-button:hover {
+  background-color: rgba(255, 186, 0, 0.8);
+}
+.hero-section .testimonial-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.hero-section .testimonial-container p {
+  width: 50%;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.2vw, 100rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.hero-section .testimonial-container .testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.hero-section .testimonial-container .testimonial-author img {
+  width: 35%;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.hero-section .testimonial-container .testimonial-author span {
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1vw, 100rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+.hero-section .hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .hero-image-container .hero-image {
+  position: absolute;
+  right: 6%;
+  width: auto;
+  height: clamp(1rem, 50vw, 100rem);
+}
+.hero-section .goldstar {
+  width: 17%;
+  height: auto;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 639px) {
+  .hero-section h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .hero-section .hero-button {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
