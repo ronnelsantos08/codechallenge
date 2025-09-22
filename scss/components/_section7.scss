@@ -1,0 +1,119 @@
+/* =========================
+   Section 7 Styling (SCSS)
+   ========================= */
+
+   $section7-text: rgba(46, 48, 46, 1);
+   $section7-highlight: rgba(255, 186, 0, 1);
+   
+   .section7-container {
+     padding: 7% 5%;
+     text-align: left;
+   
+     .section7-heading {
+       color: $section7-text;
+       font-family: 'Inter', sans-serif;
+       font-size: clamp(2rem, 3.4vw, 100rem);
+       font-weight: 900;
+       letter-spacing: -0.83px;
+       text-transform: uppercase;
+       width: 53%;
+       line-height: 1;
+     }
+   
+     .section7-button {
+       width: 25%;
+       height: auto;
+       padding: 1.5% 0;
+       border-radius: 35px;
+       background-color: $section7-highlight;
+       color: $section7-text;
+       font-family: 'Roboto Mono', monospace;
+       font-weight: 400;
+       font-size: clamp(1rem, 1.25vw, 100rem);
+       text-transform: uppercase;
+       border: none;
+       margin-top: 2%;
+       margin-bottom: 4%;
+       cursor: pointer;
+       transition: all 0.3s ease;
+   
+       &:hover {
+         background-color: darken($section7-highlight, 10%);
+       }
+     }
+   
+     .section7-item {
+       display: flex;
+       align-items: center;
+       gap: 3%;
+       margin-bottom: 10%;
+       text-align: left;
+   
+       img {
+         width: 33%;
+         height: auto;
+         flex-shrink: 0;
+       }
+   
+       h3 {
+         color: $section7-text;
+         font-family: 'Roboto Mono', monospace;
+         font-size: clamp(1rem, 1.25vw, 100rem);
+         font-weight: 400;
+         margin-bottom: 0.5rem;
+       }
+   
+       p {
+         color: $section7-text;
+         font-family: 'AberMono-Bold', monospace;
+         font-size: clamp(1rem, .5vw, 100rem);
+         font-weight: 400;
+         line-height: 1.5;
+         opacity: 0.6;
+         margin: 0;
+         color: rgba(67, 76, 108, 1);
+         text-transform: uppercase;
+       }
+     }
+   }
+   
+   /* =========================
+      Mobile Responsive
+      ========================= */
+   @media screen and (max-width: 768px) {
+     .section7-container {
+       padding: 2rem 1rem;
+   
+       .section7-heading {
+         font-size: 1.75rem;
+         line-height: 1.3;
+         width: 100%;
+       }
+   
+       .section7-button {
+         width: 100%;
+         max-width: 280px;
+         height: 50px;
+         font-size: 14px;
+       }
+   
+       .section7-item {
+         flex-direction: row;
+         text-align: left;
+   
+         img {
+           width: 80px;
+           height: 80px;
+         }
+   
+         h3 {
+           font-size: 20px;
+         }
+   
+         p {
+           font-size: 14px;
+         }
+       }
+     }
+   }
+   

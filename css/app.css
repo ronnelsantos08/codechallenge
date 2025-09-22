@@ -7279,6 +7279,107 @@ html.is-reveal-open body {
     margin: 0 auto;
   }
 }
+/* =========================
+   Section 7 Styling (SCSS)
+   ========================= */
+.section7-container {
+  padding: 7% 5%;
+  text-align: left;
+}
+.section7-container .section7-heading {
+  color: rgb(46, 48, 46);
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 3.4vw, 100rem);
+  font-weight: 900;
+  letter-spacing: -0.83px;
+  text-transform: uppercase;
+  width: 53%;
+  line-height: 1;
+}
+.section7-container .section7-button {
+  width: 25%;
+  height: auto;
+  padding: 1.5% 0;
+  border-radius: 35px;
+  background-color: rgb(255, 186, 0);
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  text-transform: uppercase;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.section7-container .section7-button:hover {
+  background-color: rgb(204, 148.8, 0);
+}
+.section7-container .section7-item {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  margin-bottom: 10%;
+  text-align: left;
+}
+.section7-container .section7-item img {
+  width: 33%;
+  height: auto;
+  flex-shrink: 0;
+}
+.section7-container .section7-item h3 {
+  color: rgb(46, 48, 46);
+  font-family: "Roboto Mono", monospace;
+  font-size: clamp(1rem, 1.25vw, 100rem);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.section7-container .section7-item p {
+  color: rgb(46, 48, 46);
+  font-family: "AberMono-Bold", monospace;
+  font-size: clamp(1rem, 0.5vw, 100rem);
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.6;
+  margin: 0;
+  color: rgb(67, 76, 108);
+  text-transform: uppercase;
+}
+
+/* =========================
+   Mobile Responsive
+   ========================= */
+@media screen and (max-width: 768px) {
+  .section7-container {
+    padding: 2rem 1rem;
+  }
+  .section7-container .section7-heading {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    width: 100%;
+  }
+  .section7-container .section7-button {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .section7-container .section7-item {
+    flex-direction: row;
+    text-align: left;
+  }
+  .section7-container .section7-item img {
+    width: 80px;
+    height: 80px;
+  }
+  .section7-container .section7-item h3 {
+    font-size: 20px;
+  }
+  .section7-container .section7-item p {
+    font-size: 14px;
+  }
+}
 body {
   background-color: rgb(239, 247, 250);
 }
