@@ -67,10 +67,11 @@
         border-radius: 30px;      
         text-transform: uppercase;
         font-weight: 400;
-        font-size: clamp(1rem, 1.29vw, 100rem);
+        font-size: clamp(.7rem, 1.29vw, 100rem);
         display: inline-block;
         text-decoration: none;
         transition: all 0.3s ease-in-out; 
+        border: 2px solid  rgba(34, 36, 48, 1);
       
         &:hover {
           background-color: #fdfdfd;
@@ -114,3 +115,60 @@
     cursor: pointer;
     padding: 0.25rem;
   }
+
+  /* Mobile-first adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem; /* tighter padding */
+  }
+
+  .navbar-left {
+    .logo {
+      width: clamp(1rem, 40px, 100rem);
+      height: auto;
+    }
+
+    .hamburger {
+      width: 32px;
+      height: 24px;
+
+      span {
+        height: 3px;
+        background: black;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .navbar-right {
+    gap: 1rem;
+
+    .btn-get-started {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .cart {
+      .cart-icon {
+        width: 28px;
+      }
+
+      .cart-badge {
+        top: -6px;
+        right: -6px;
+        font-size: 0.7rem;
+        padding: 3px 6px;
+      }
+    }
+  }
+}
+
+/* For extra small screens (phones <480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+ 
+}
