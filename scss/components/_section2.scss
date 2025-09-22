@@ -1,0 +1,38 @@
+   /* --- Section 2 Styling --- */
+   .section2-container {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 52px;
+    max-width: 1266px;
+    min-height: 282px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .section2-item {
+    display: flex;
+    flex-direction: row; /* Aligns img and text in a row */
+    align-items: center;
+    text-align: left;
+    margin: 1rem;
+    flex-basis: 300px; /* Provides a base width for items */
+  }
+
+  .section2-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem; /* Space between img and text */
+  }
+
+  .section2-item h2 {
+    color: rgba(46, 48, 46, 1);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    width: auto; /* Allow text to take up space */
+  }
